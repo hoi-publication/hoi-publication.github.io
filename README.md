@@ -1,2 +1,2 @@
-# hoi-publication.github.io
+# hoi!
 Hoi Publication Under Construction
