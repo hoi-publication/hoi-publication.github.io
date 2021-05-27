@@ -29,7 +29,6 @@
             padding-right: 2em;
             padding-bottom: 1em;
             border-bottom: 1px solid black;
-            text-align: right;
         }
         .item:nth-child(2n) {
             padding-top: 1em;
