@@ -8,14 +8,28 @@
         font-weight: 400;
         font-size: 1em;
         line-height: 1.5em;
-        word-spacing: -0.3em;
-        color: #333;
-        text-align:left;
+        word-spacing: -0.34em;
+        color: #22B573;
+        text-align: left;
+        background-color: #222;
+    }
+    
+    .nav {
+        display: grid;
+        grid-template-columns: 8em 1fr;
     }
     
     .hoi {
-        text-align: center;
         padding-bottom: 2em;
+        width: 5em;
+        position: relative;
+    }
+    
+    .about {
+        padding-bottom: 2em;
+        max-width: 400px;
+        position: relative;
+        color: #C2CAAA;
     }
     
     @media screen and (min-width: 1024px) {
@@ -29,13 +43,13 @@
             padding-top: 1em;
             padding-right: 2em;
             padding-bottom: 1em;
-            border-bottom: 1px solid black;
+            border-bottom: 1px solid #C2CAAA;
         }
         .item:nth-child(2n) {
             padding-top: 1em;
             grid-column: 2;
             padding-bottom: 1em;
-            border-bottom: 1px solid black;
+            border-bottom: 1px solid #C2CAAA;
         }
     }
     
@@ -54,7 +68,7 @@
             padding-top: 1em;
             padding-bottom: 1em;
             grid-column: 1;
-            border-bottom: 1px solid black;
+            border-bottom: 1px solid #C2CAAA;
         }
     }
     
@@ -66,29 +80,26 @@
         width: 100%;
     }
     
-    ul {
-        list-style-type: none;
-        margin-top: 1em;
-        padding: 0;
-    }
-    
     a:visited {
         text-decoration: none;
-        color: #333;
+        color: #22B573;
     }
     
     a:link {
         text-decoration: none;
-        color: #333;
+        color: #22B573;
     }
     
     a:hover {
         text-decoration: none;
-        color: #333;
-        background: yellow;
+        color: #FFF;
+        background: #C2CAAA;
+        transition: all ease 0.3s;
     }
     
     a:active {
         text-decoration: none;
-        color: #333;
+        color: #FFF;
+        background: #C2CAAA;
+        cursor: url("images/cursor.svg"), auto;
     }
