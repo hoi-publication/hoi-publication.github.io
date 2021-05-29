@@ -16,11 +16,10 @@
     
     .hoi {
         height: 0;
-        margin: 1em;
         color: #FFFFFF;
-        border-left: 4em solid transparent;
-        border-right: 4em solid transparent;
         border-bottom: 6.4em solid #22B573;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
     }
     
     .hoi p {
