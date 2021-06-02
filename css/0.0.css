@@ -8,7 +8,7 @@ body {
     font-family: 'IBM Plex Mono', 'Spoqa Han Sans Neo', 'sans-serif';
     /*background-color: #C2CAAA;*/
 }
-
+@media screen and (min-width: 1025px){
 #container {
     margin-left:2em;
     margin-right:5em;
@@ -22,7 +22,7 @@ body {
     font-weight: 300;
     font-size: 1em;
     position:fixed;
-z-index:1;
+    z-index:1;
 
 }
 
@@ -46,7 +46,86 @@ position:relative;
 .productlink {
     font-weight: 300;
 }
+}
+@media (max-width: 1025px) and (min-width:769px){
+    #container {
+        margin-left:2em;
+        margin-right:5em;
+        margin-top:0.5em;
+    }
+    
+    .header {
+        margin-right:1em;
+        writing-mode:vertical-rl;
+        text-orientation: sideways;
+        font-weight: 300;
+        font-size: 1em;
+        position:fixed;
+        z-index:1;
+    
+    }
+    
+    .logo {}
+    
+    .menu-text {}
+    
+    .menu-button {}
+    
+    .product {
+    position:relative;
+        color: #333;
+        font-weight: 200;
+        font-size: 3em;
+        line-height: 1.5em;
+        word-spacing: -0.34em;
+        letter-spacing: -0.02em;
+        z-index:2;
+    }
+    
+    .productlink {
+        font-weight: 300;
+    }
+}
 
+@media (max-width: 768px){
+    #container {
+        margin-left:2em;
+        margin-right:5em;
+        margin-top:0.5em;
+    }
+    
+    .header {
+        margin-right:1em;
+        writing-mode:vertical-rl;
+        text-orientation: sideways;
+        font-weight: 300;
+        font-size: 1em;
+        position:fixed;
+        z-index:1;
+    
+    }
+    
+    .logo {}
+    
+    .menu-text {}
+    
+    .menu-button {}
+    
+    .product {
+    position:relative;
+        color: #333;
+        font-weight: 200;
+        font-size: 2em;
+        line-height: 1.5em;
+        word-spacing: -0.34em;
+        letter-spacing: -0.02em;
+        z-index:2;
+    }
+    
+    .productlink {
+        font-weight: 300;
+    }
+}
 a:visited {
     text-decoration: none;
     color: #22B573;
