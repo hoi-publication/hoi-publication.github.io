@@ -1,163 +1,195 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;300&display=swap');
-@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
-body {
-    vertical-align: baseline;
-    margin: 0;
-    padding: 0;
-    font-family: 'IBM Plex Mono', 'Spoqa Han Sans Neo', 'sans-serif';
-    /*background-color: #C2CAAA;*/
-}
-
-@media screen and (min-width: 1025px) {
-    #container {
-        margin-left: 2em;
-        margin-right: 5em;
-        margin-top: 0.5em;
-    }
-    .header {
-        margin-right: 1em;
-        writing-mode: vertical-rl;
-        text-orientation: sideways;
-        font-weight: 300;
-        font-size: 1em;
-        position: fixed;
-        z-index: 1;
-    }
-    .logo {}
-    .menu-text {}
-    .menu-button {}
-    .product {
-        position: relative;
-        color: #333;
-        font-weight: 200;
-        font-size: 4em;
-        line-height: 1.5em;
-        word-spacing: -0.34em;
-        letter-spacing: -0.02em;
-        z-index: 2;
-    }
-    .productlink {
-        font-weight: 300;
-    }
-}
-
-@media (max-width: 1025px) and (min-width:769px) {
-    #container {
-        margin-left: 2em;
-        margin-right: 5em;
-        margin-top: 0.5em;
-    }
-    .header {
-        margin-right: 1em;
-        writing-mode: vertical-rl;
-        text-orientation: sideways;
-        font-weight: 300;
-        font-size: 1em;
-        position: fixed;
-        z-index: 1;
-    }
-    .logo {}
-    .menu-text {}
-    .menu-button {}
-    .product {
-        position: relative;
-        color: #333;
-        font-weight: 200;
-        font-size: 3em;
-        line-height: 1.5em;
-        word-spacing: -0.34em;
-        letter-spacing: -0.02em;
-        z-index: 2;
-    }
-    .productlink {
-        font-weight: 300;
-    }
-}
-
-@media (max-width: 768px) {
-    #container {
-        margin-left: 2em;
-        margin-right: 5em;
-        margin-top: 0.5em;
-    }
-    .header {
-        margin-right: 1em;
-        writing-mode: vertical-rl;
-        text-orientation: sideways;
-        font-weight: 300;
-        font-size: 1em;
-        position: fixed;
-        z-index: 1;
-    }
-    .logo {}
-    .menu-text {}
-    .menu-button {}
-    .product {
-        position: relative;
-        color: #333;
-        font-weight: 300;
-        font-size: 1.3em;
-        line-height: 1.5em;
-        word-spacing: -0.34em;
-        letter-spacing: -0.02em;
-        z-index: 2;
-    }
-    .productlink {
-        font-weight: 300;
-    }
-}
-
-a:visited {
-    text-decoration: none;
-    color: #22B573;
-}
-
-a:link {
-    text-decoration: none;
-    color: #22B573;
-}
-
-a:hover {
-    text-decoration: none;
-    color: #FFF;
-    transition: all ease 0.3s;
-    cursor: crosshair;
-    background-color: #22B573;
-}
-
-a:active {
-    text-decoration: none;
-    color: #FFF;
-    background-color: #22B573;
-}
-
- ::-moz-selection {
-    color: #fff;
-    background-color: #22B573;
-}
-
- ::selection {
-    color: #fff;
-    background-color: #22B573;
-}
-
- ::-webkit-selection {
-    color: #fff;
-    background-color: #22B573;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-li {
-    display: inline;
-    margin-right: 2em;
-    /*  margin-left: 1em;
+        @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+        body {
+            vertical-align: baseline;
+            margin: 0;
+            padding: 0;
+            font-family: 'Spoqa Han Sans Neo', Helvetica, 'sans-serif';
+            background-color: #C2CAAA;
+            letter-spacing: -0.05em;
+        }
+        
+        @media screen and (min-width: 1281px) {
+            #container {
+                margin-left: 2em;
+                margin-right: 5em;
+                margin-top: 0.5em;
+            }
+            .header {
+                margin-right: 1em;
+                font-weight: 300;
+                font-size: 5em;
+                z-index: 1;
+                color: #C2CAAA;
+            }
+            .logo {}
+            .menu-text {
+                background-color: #E2E7D8;
+            }
+            .menu-button {}
+            .product {
+                position: relative;
+                color: #555;
+                margin-top: 33vh;
+                max-width: 66vw;
+                font-weight: 200;
+                font-size: 3em;
+                line-height: 1.5em;
+                z-index: 2;
+            }
+            .productlink {
+                font-weight: 300;
+            }
+        }
+        
+        @media (max-width: 1280px) and (min-width: 1025px) {
+            #container {
+                margin-left: 2em;
+                margin-right: 5em;
+                margin-top: 0.5em;
+            }
+            .header {
+                margin-right: 1em;
+                font-weight: 300;
+                font-size: 5em;
+                z-index: 1;
+                color: #C2CAAA;
+            }
+            .logo {}
+            .menu-text {
+                background-color: #E2E7D8;
+            }
+            .menu-button {}
+            .product {
+                position: relative;
+                color: #555;
+                margin-top: 33vh;
+                max-width: 66vw;
+                font-weight: 200;
+                font-size: 2.5em;
+                line-height: 1.5em;
+                z-index: 2;
+            }
+            .productlink {
+                font-weight: 300;
+            }
+        }
+        
+        @media (max-width: 1025px) and (min-width:769px) {
+            #container {
+                margin-left: 2em;
+                margin-right: 5em;
+                margin-top: 0.5em;
+            }
+            .header {
+                margin-right: 1em;
+                font-weight: 300;
+                font-size: 5em;
+                z-index: 1;
+                color: #C2CAAA;
+            }
+            .logo {}
+            .menu-text {
+                background-color: #E2E7D8;
+            }
+            .menu-button {}
+            .product {
+                position: relative;
+                color: #555;
+                margin-top: 33vh;
+                max-width: 66vw;
+                font-weight: 200;
+                font-size: 2em;
+                line-height: 1.5em;
+                z-index: 2;
+            }
+            .productlink {
+                font-weight: 300;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            #container {
+                margin-left: 2em;
+                margin-right: 5em;
+                margin-top: 0.5em;
+            }
+            .header {
+                margin-right: 1em;
+                font-weight: 300;
+                font-size: 5em;
+                z-index: 1;
+                color: #C2CAAA;
+            }
+            .logo {}
+            .menu-text {
+                background-color: #E2E7D8;
+            }
+            .menu-button {}
+            .product {
+                position: relative;
+                color: #555;
+                margin-top: 33vh;
+                max-width: 66vw;
+                font-weight: 200;
+                font-size: 1.5em;
+                line-height: 1.5em;
+                z-index: 2;
+            }
+            .productlink {
+                font-weight: 300;
+            }
+        }
+        
+        a:visited {
+            text-decoration: none;
+            color: #E2E7D8;
+        }
+        
+        a:link {
+            text-decoration: none;
+            color: #E2E7D8;
+        }
+        
+        a:hover {
+            text-decoration: none;
+            color: #C2CAAA;
+            background-color: #E2E7D8;
+            transition: all ease 0.3s;
+        }
+        
+        a:active {
+            text-decoration: none;
+            color: #C2CAAA;
+            background-color: #E2E7D8;
+        }
+        
+         ::-moz-selection {
+            color: #C2CAAA;
+            background-color: #FFF;
+        }
+        
+         ::selection {
+            color: #C2CAAA;
+            background-color: #FFF;
+        }
+        
+         ::-webkit-selection {
+            color: #C2CAAA;
+            background-color: #FFF;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        li {
+            display: inline;
+            margin-right: 2em;
+            /*  margin-left: 1em;
     margin-right: 1em;
     padding: 1em;
     border: 1px solid #FFF; 
     border-radius: 50% */
-}
+        }
