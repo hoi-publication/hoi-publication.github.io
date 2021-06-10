@@ -51,8 +51,8 @@
         
         @media (max-width: 768px) {
             #container {
-                margin-left: 5em;
-                margin-right: 5em;
+                margin-left: 1em;
+                margin-right: 1em;
             }
             .header {
                 margin-right: 1em;
@@ -73,15 +73,16 @@
                 margin-top: 10vh;
                 font-weight: 200;
                 z-index: 2;
+                word-break: break-all;
             }
             h1 {
-                font-size: 3em;
+                font-size: 2em;
                 font-weight: 300;
                 line-height: 1.5em;
                 letter-spacing: -0.05em;
             }
             h2 {
-                font-size: 2em;
+                font-size: 1.25em;
                 font-weight: 300;
                 line-height: 1.5em;
                 letter-spacing: -0.05em;
