@@ -15,7 +15,9 @@
 }
 .order, .name, .form, .description, .reldate, .code:nth-child(n) {
   display:grid;
-  font-size:15px;
+  font-size:1em;
+  line-height:1.65em;
+  word-break:keep-all;
   border-right: 1px solid black;
   border-bottom: 1px solid black;
   padding:1em;

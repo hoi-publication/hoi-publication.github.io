@@ -2,7 +2,7 @@ window.addEventListener('DOMContentLoaded', main);
 
 async function main(){
 	const TARGET={
-        order : document.getElementsByClassName('order'),
+
         name : document.getElementsByClassName('name'),
         form : document.getElementsByClassName('form'),
 		description : document.getElementsByClassName('description'),
@@ -10,18 +10,19 @@ async function main(){
 		code : document.getElementsByClassName('code')
 	};
 	const SOURCE = 'https://spreadsheets.google.com/feeds/list/1o0jmDO8pvUYujM6aLH7k86c5MQ6gs0gShXjDBPZ_pmU/1/public/full?alt=json';
-	const COLUMNS = ['order', 'name', 'form', 'description', 'reldate', 'code'];
+	const COLUMNS = ['name', 'form', 'description', 'reldate', 'code'];
 	
 	const DATA = await separateRowFromJson(SOURCE, COLUMNS);
 
 	for(let i=0; i<DATA.length; i++){
-        TARGET['order'][i].textContent = DATA[i]['order'];
+
         TARGET['name'][i].textContent = DATA[i]['name'];
         TARGET['form'][i].textContent = DATA[i]['form'];
 		TARGET['description'][i].textContent = DATA[i]['description'];
 		TARGET['reldate'][i].textContent = DATA[i]['reldate'];
 		TARGET['code'][i].textContent = DATA[i]['code'];
 	}
+
 }
 
 async function separateRowFromJson(SOURCE, COLUMNS){
