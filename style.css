@@ -11,9 +11,9 @@
 .content {
   display: grid;
   grid-auto-rows: auto;
-  grid-template-columns: 1fr 1fr 1fr 1fr 3fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 3fr 1fr;
 }
-.order, .name, .form, .description, .reldate, .code:nth-child(n) {
+.name, .form, .description, .reldate, .code:nth-child(n) {
   display:grid;
   font-size:1em;
   line-height:1.65em;
