@@ -2,7 +2,6 @@ window.addEventListener('DOMContentLoaded', main);
 
 async function main(){
 	const TARGET={
-
         name : document.getElementsByClassName('name'),
         form : document.getElementsByClassName('form'),
 		description : document.getElementsByClassName('description'),
