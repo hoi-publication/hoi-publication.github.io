@@ -33,24 +33,27 @@ async function separateRowFromJson(SOURCE, COLUMNS) {
     let _DATA = [];
     for (var i = 0; i < Object.keys(temp).length; i++) {
         _DATA[i] = {};
+
+        var newDiv = document.createElement("div");
+        newDiv.className = 'form';
+        document.getElementById('content').append(newDiv);
+        var newDiv2 = document.createElement("div");
+        newDiv2.className = 'name';
+        document.getElementById('content').append(newDiv2);
+        var newDiv3 = document.createElement("div");
+        newDiv3.className = 'description';
+        document.getElementById('content').append(newDiv3);
+        var newDiv4 = document.createElement("div");
+        newDiv4.className = 'reldate';
+        document.getElementById('content').append(newDiv4);
+        var newDiv5 = document.createElement("div");
+        newDiv5.className = 'code';
+        document.getElementById('content').append(newDiv5);
+
         for (var k = 0; k < Object.keys(COLUMNS).length; k++) {;
             _DATA[i][COLUMNS[k]] = temp[i]['gsx$' + COLUMNS[k]]['$t'];
 
-            var newDiv = document.createElement("div");
-            newDiv.className = 'name';
-            document.body.append(newDiv);
-            var newDiv2 = document.createElement("div");
-            newDiv2.className = 'form';
-            document.body.append(newDiv2);
-            var newDiv3 = document.createElement("div");
-            newDiv3.className = 'description';
-            document.body.append(newDiv3);
-            var newDiv4 = document.createElement("div");
-            newDiv4.className = 'reldate';
-            document.body.append(newDiv4);
-            var newDiv5 = document.createElement("div");
-            newDiv5.className = 'code';
-            document.body.append(newDiv5);
+
 
         }
     }
