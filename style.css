@@ -1,19 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+KR:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 *,
 *::before,
 *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 16px;
-    font-family: IBM Plex Mono, -apple-system, sans-serif;
+    font-family: 'Open Sans', 'Spoqa Han Sans Neo', -apple-system, sans-serif;
     font-weight: 400;
-    word-spacing: -0.3em;
-    line-height: 1.65rem;
     word-break: keep-all;
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:1601px) {
+    body {
+        font-size: 20px;
+        line-height: 1.5em;
+    }
     #contentTitle,
     #content {
         width: 100vw;
@@ -27,7 +29,56 @@
         overflow: hidden;
         background-color: black;
         color: white;
-        font-weight: 500;
+        font-weight: 400;
+    }
+    #content {
+        padding-top: 80px;
+    }
+    #navbar {
+        position: fixed;
+        background-color: black;
+        color: white;
+        right: 1em;
+        bottom: 1em;
+        padding: 0.5em;
+        vertical-align: center;
+        cursor: alias;
+    }
+    .nav:nth-child(n) {
+        min-height: 80px;
+        display: grid;
+        padding: 1em;
+    }
+    .name,
+    .form,
+    .description,
+    .code:nth-child(n) {
+        min-height: 80px;
+        display: grid;
+        padding: 1em;
+        border-bottom: 1px solid black;
+    }
+}
+
+@media (max-width:1600px) and (min-width:769px) {
+    body {
+        font-size: 16px;
+        line-height: 1.5em;
+    }
+    #contentTitle,
+    #content {
+        width: 100vw;
+        display: grid;
+        grid-auto-rows: auto;
+        grid-template-columns: 1fr 2fr 3fr 1fr;
+        text-align: left;
+    }
+    #contentTitle {
+        position: fixed;
+        overflow: hidden;
+        background-color: black;
+        color: white;
+        font-weight: 400;
     }
     #content {
         padding-top: 60px;
@@ -41,7 +92,6 @@
         padding: 0.5em;
         vertical-align: center;
         cursor: alias;
-        transition: width .3s, height .3s;
     }
     .nav:nth-child(n) {
         min-height: 60px;
@@ -60,6 +110,10 @@
 }
 
 @media (max-width:768px) and (min-width:0) {
+    body {
+        font-size: 16px;
+        line-height: 1.5em;
+    }
     #contentTitle,
     #content {
         width: 100%;
@@ -72,7 +126,6 @@
         overflow: hidden;
         background-color: black;
         color: white;
-        font-weight: 500;
     }
     #content {
         padding-top: 120px;
@@ -86,7 +139,6 @@
         padding: 0.5em;
         vertical-align: center;
         cursor: alias;
-        transition: width .3s, height .3s;
     }
     .nav:nth-child(n) {
         height: 60px;
@@ -96,21 +148,28 @@
     .nav:nth-child(3n-2) {
         display: none;
     }
+    .nav:nth-child(4n-1) {
+        font-weight: 400;
+    }
     .name,
     .form {
-        min-height: 30px;
         display: grid;
-        padding: 1em;
-        font-weight: 500;
+        padding-right: 1em;
+        padding-left: 1em;
+        padding-top: 1em;
+    }
+    .name {
+        font-weight: 600;
     }
     .form {
+        font-weight: 400;
         display: none;
     }
-    .description,
-    .code {
-        min-height: 60px;
+    .description {
         display: grid;
-        padding: 1em;
+        padding-right: 1em;
+        padding-left: 1em;
+        padding-bottom: 1em;
         border-bottom: 3px solid black;
     }
     .code {
@@ -124,8 +183,7 @@
 
 .navbarAfter {
     width: 20em;
-    height: 35em;
-    transition: width .3s, height .3s;
+    height: 23em;
 }
 
 .navbarAfter .about {
