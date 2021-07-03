@@ -81,15 +81,15 @@
         position: fixed;
         background-color: black;
         color: white;
-        right: 1em;
-        bottom: 1em;
+        right: 0.5em;
+        top: 0.5em;
         padding: 0.5em;
         vertical-align: center;
         cursor: alias;
         transition: width .3s, height .3s;
     }
     .nav:nth-child(n) {
-        min-height: 60px;
+        height: 60px;
         display: grid;
         padding: 1em;
     }
@@ -98,7 +98,7 @@
     }
     .name,
     .form {
-        min-height: 60px;
+        min-height: 30px;
         display: grid;
         padding: 1em;
         font-weight: 500;
