@@ -61,3 +61,8 @@ async function separateRowFromJson(SOURCE, COLUMNS) {
     return _DATA;
 
 };
+
+function info() {
+    var element = document.getElementById("navbar");
+    element.classList.toggle("navbarAfter");
+}

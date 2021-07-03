@@ -24,34 +24,31 @@
 #contentTitle {
     position: fixed;
     overflow: hidden;
-    background-color: white;
+    background-color: black;
+    color: white;
+    font-weight: 500;
 }
 
 #content {
     padding-top: 60px;
 }
 
-.navbar {
+#navbar {
     position: fixed;
-    background-color: white;
-    width: 20vw;
-    height: 5vh;
-    left: 80%;
-    top: 95%;
-    padding: 1em;
-    text-align: center;
+    background-color: black;
+    color: white;
+    right: 1em;
+    bottom: 1em;
+    padding: 0.5em;
     vertical-align: center;
-}
-
-.navbar a {
-    display: block;
+    cursor: alias;
+    transition: width .3s, height .3s;
 }
 
 .nav:nth-child(n) {
     min-height: 60px;
     display: grid;
     padding: 1em;
-    border-bottom: 3px solid black;
 }
 
 .name,
@@ -63,4 +60,56 @@
     display: grid;
     padding: 1em;
     border-bottom: 1px solid black;
+}
+
+#navbar.about {
+    text-align: center;
+}
+
+.navbarAfter {
+    width: 30em;
+    height: 15em;
+    transition: width .3s, height .3s;
+}
+
+.navbarAfter .about {
+    text-align: center;
+}
+
+.aboutContent {
+    display: none;
+    padding: 1em;
+}
+
+.navbarAfter .aboutContent {
+    text-align: left;
+    display: block;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    font-weight: inherit;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    font-weight: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    font-weight: inherit;
+}
+
+a:active {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    font-weight: inherit;
 }
