@@ -31,7 +31,7 @@
         font-weight: 400;
     }
     #content {
-        padding-top: 50px;
+        padding-top: 52px;
     }
     #navbar {
         position: fixed;
@@ -77,25 +77,25 @@
         overflow: hidden;
         background-color: white;
         color: black;
+        border-bottom: 2px solid black;
     }
     #content {
-        padding-top: 60px;
+        padding-top: 42px;
     }
     #navbar {
         position: fixed;
         background-color: white;
         color: black;
-        top: 1em;
+        top: 0;
         left: 0.5em;
-        padding-left: 0.5em;
         padding-right: 0.5em;
         vertical-align: center;
         cursor: alias;
     }
     .nav:nth-child(n) {
-        height: 50px;
+        height: 40px;
         display: grid;
-        padding: 1em;
+        padding-left: 0.5em;
     }
     .nav:nth-child(3) {
         display: none;
@@ -107,9 +107,9 @@
     .form,
     .date {
         display: grid;
-        padding-left: 1em;
+        padding-left: 0.5em;
         border-bottom: 2px solid black;
-        min-height: 30px;
+        min-height: 40px;
     }
     .description {
         display: none;
