@@ -11,56 +11,7 @@
     word-break: keep-all;
 }
 
-@media screen and (min-width:1601px) {
-    body {
-        font-size: 20px;
-        line-height: 1.5em;
-    }
-    #contentTitle,
-    #content {
-        width: 100vw;
-        display: grid;
-        grid-auto-rows: auto;
-        grid-template-columns: 1fr 2fr 3fr 1fr;
-        text-align: left;
-    }
-    #contentTitle {
-        position: fixed;
-        overflow: hidden;
-        background-color: black;
-        color: white;
-        font-weight: 400;
-    }
-    #content {
-        padding-top: 80px;
-    }
-    #navbar {
-        position: fixed;
-        background-color: black;
-        color: white;
-        right: 1em;
-        bottom: 1em;
-        padding: 0.5em;
-        vertical-align: center;
-        cursor: alias;
-    }
-    .nav:nth-child(n) {
-        min-height: 80px;
-        display: grid;
-        padding: 1em;
-    }
-    .name,
-    .form,
-    .description,
-    .code:nth-child(n) {
-        min-height: 80px;
-        display: grid;
-        padding: 1em;
-        border-bottom: 1px solid black;
-    }
-}
-
-@media (max-width:1600px) and (min-width:769px) {
+@media screen and (min-width:769px) {
     body {
         font-size: 16px;
         line-height: 1.5em;
