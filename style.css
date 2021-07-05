@@ -1,19 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
-@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500&display=swap');
 *,
 *::before,
 *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', 'Spoqa Han Sans Neo', -apple-system, sans-serif;
-    font-weight: 400;
+    font-family: 'Gothic A1', 'Helvetica Neue', -apple-system, sans-serif;
+    font-weight: 500;
     word-break: keep-all;
 }
 
 @media screen and (min-width:769px) {
     body {
-        font-size: 16px;
+        font-size: 32px;
         line-height: 1.5em;
     }
     #contentTitle,
@@ -21,18 +20,18 @@
         width: 100vw;
         display: grid;
         grid-auto-rows: auto;
-        grid-template-columns: 1fr 2fr 3fr 1fr;
+        grid-template-columns: 1fr 2fr 1fr 1fr;
         text-align: left;
     }
     #contentTitle {
         position: fixed;
         overflow: hidden;
-        background-color: black;
-        color: white;
+        background-color: white;
+        color: black;
         font-weight: 400;
     }
     #content {
-        padding-top: 60px;
+        padding-top: 50px;
     }
     #navbar {
         position: fixed;
@@ -40,29 +39,30 @@
         color: white;
         right: 1em;
         bottom: 1em;
-        padding: 0.5em;
         vertical-align: center;
         cursor: alias;
+        padding: 0.25em;
     }
     .nav:nth-child(n) {
-        min-height: 60px;
+        min-height: 50px;
         display: grid;
-        padding: 1em;
+        border-bottom: 2px solid black;
+        padding-left: 0.5em;
     }
     .name,
     .form,
     .description,
-    .code:nth-child(n) {
-        min-height: 60px;
+    .date:nth-child(n) {
+        min-height: 50px;
         display: grid;
-        padding: 1em;
-        border-bottom: 1px solid black;
+        padding-left: 0.5em;
+        border-bottom: 2px solid black;
     }
 }
 
 @media (max-width:768px) and (min-width:0) {
     body {
-        font-size: 16px;
+        font-size: 24px;
         line-height: 1.5em;
     }
     #contentTitle,
@@ -70,60 +70,48 @@
         width: 100%;
         display: grid;
         grid-auto-rows: auto;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 3fr 1fr;
     }
     #contentTitle {
         position: fixed;
         overflow: hidden;
-        background-color: black;
-        color: white;
+        background-color: white;
+        color: black;
     }
     #content {
-        padding-top: 120px;
+        padding-top: 60px;
     }
     #navbar {
         position: fixed;
-        background-color: black;
-        color: white;
-        right: 0.5em;
-        top: 0.5em;
-        padding: 0.5em;
+        background-color: white;
+        color: black;
+        top: 1em;
+        left: 0.5em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
         vertical-align: center;
         cursor: alias;
     }
     .nav:nth-child(n) {
-        height: 60px;
+        height: 50px;
         display: grid;
         padding: 1em;
     }
-    .nav:nth-child(3n-2) {
+    .nav:nth-child(3) {
         display: none;
     }
-    .nav:nth-child(4n-1) {
-        font-weight: 400;
+    .nav:nth-child(4) {
+        display: none;
     }
     .name,
-    .form {
+    .form,
+    .date {
         display: grid;
-        padding-right: 1em;
         padding-left: 1em;
-        padding-top: 1em;
-    }
-    .name {
-        font-weight: 600;
-    }
-    .form {
-        font-weight: 400;
-        display: none;
+        border-bottom: 2px solid black;
+        min-height: 30px;
     }
     .description {
-        display: grid;
-        padding-right: 1em;
-        padding-left: 1em;
-        padding-bottom: 1em;
-        border-bottom: 3px solid black;
-    }
-    .code {
         display: none;
     }
 }
@@ -139,6 +127,7 @@
 
 .navbarAfter .about {
     text-align: center;
+    padding-top: 1em;
 }
 
 .aboutContent {
