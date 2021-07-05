@@ -26,7 +26,6 @@ async function main() {
     }
 }
 
-// 이하 부분에서 실제로 데이터를 출력하는 듯함
 async function separateRowFromJson(SOURCE, COLUMNS) {
     const FETCHED_SOURCE = await fetch(SOURCE);
     let temp = await FETCHED_SOURCE.json();
@@ -39,12 +38,12 @@ async function separateRowFromJson(SOURCE, COLUMNS) {
         var newDiv = document.createElement("div");
         newDiv.className = 'date';
         document.getElementById('content').append(newDiv);
-        var newDiv3 = document.createElement("div");
-        newDiv3.className = 'name';
-        document.getElementById('content').append(newDiv3);
         var newDiv2 = document.createElement("div");
-        newDiv2.className = 'form';
+        newDiv2.className = 'name';
         document.getElementById('content').append(newDiv2);
+        var newDiv3 = document.createElement("div");
+        newDiv3.className = 'form';
+        document.getElementById('content').append(newDiv3);
         var newDiv4 = document.createElement("div");
         newDiv4.className = 'description';
         document.getElementById('content').append(newDiv4);

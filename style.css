@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;500&display=swap');
 *,
 *::before,
 *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Gothic A1', 'Helvetica Neue', -apple-system, sans-serif;
-    font-weight: 500;
+    font-family: 'Gothic A1', sans-serif;
     word-break: keep-all;
 }
 
@@ -28,20 +27,23 @@
         overflow: hidden;
         background-color: white;
         color: black;
-        font-weight: 400;
+        font-weight: 500;
     }
     #content {
         padding-top: 52px;
+        font-weight: 300;
     }
     #navbar {
         position: fixed;
         background-color: black;
         color: white;
+        font-size: 20px;
+        line-height: 1.5em;
         right: 1em;
         bottom: 1em;
         vertical-align: center;
         cursor: alias;
-        padding: 0.25em;
+        padding: 0.3em;
     }
     .nav:nth-child(n) {
         min-height: 50px;
@@ -87,8 +89,9 @@
         background-color: white;
         color: black;
         top: 0;
-        left: 0.5em;
+        left: 0;
         padding-right: 0.5em;
+        padding-left: 0.5em;
         vertical-align: center;
         cursor: alias;
     }
@@ -123,6 +126,7 @@
 .navbarAfter {
     width: 20em;
     height: 23em;
+    font-weight: 300;
 }
 
 .navbarAfter .about {
@@ -132,7 +136,10 @@
 
 .aboutContent {
     display: none;
-    padding: 1em;
+    padding-top: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 0.5em;
 }
 
 .navbarAfter .aboutContent {
