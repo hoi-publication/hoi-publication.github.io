@@ -7,11 +7,11 @@ async function main() {
         name: document.getElementsByClassName('name'),
         form: document.getElementsByClassName('form'),
         description: document.getElementsByClassName('description'),
-        //      reldate: document.getElementsByClassName('reldate'),
+        link: document.getElementsByClassName('link'),
 
     };
     const SOURCE = 'https://spreadsheets.google.com/feeds/list/1o0jmDO8pvUYujM6aLH7k86c5MQ6gs0gShXjDBPZ_pmU/1/public/full?alt=json';
-    const COLUMNS = ['date', 'name', 'form', 'description'];
+    const COLUMNS = ['date', 'name', 'form', 'description', 'link'];
     const DATA = await separateRowFromJson(SOURCE, COLUMNS);
     for (let i = 0; i < DATA.length; i++) {
 
@@ -19,7 +19,7 @@ async function main() {
         TARGET['name'][i].textContent = DATA[i]['name'];
         TARGET['form'][i].textContent = DATA[i]['form'];
         TARGET['description'][i].textContent = DATA[i]['description'];
-        //      TARGET['reldate'][i].textContent = DATA[i]['reldate'];
+        TARGET['link'][i].textContent = DATA[i]['link'];
 
 
 
@@ -38,24 +38,26 @@ async function separateRowFromJson(SOURCE, COLUMNS) {
         var newDiv = document.createElement("div");
         newDiv.className = 'date';
         document.getElementById('content').append(newDiv);
+
         var newDiv2 = document.createElement("div");
         newDiv2.className = 'name';
         document.getElementById('content').append(newDiv2);
+
         var newDiv3 = document.createElement("div");
         newDiv3.className = 'form';
         document.getElementById('content').append(newDiv3);
+
         var newDiv4 = document.createElement("div");
         newDiv4.className = 'description';
         document.getElementById('content').append(newDiv4);
-        //     var newDiv4 = document.createElement("div");
-        //     newDiv4.className = 'reldate';
-        //     document.getElementById('content').append(newDiv4);
 
+        var newDiv5 = document.createElement("div");
+        newDiv5.className = 'link';
+        document.getElementById('content').append(newDiv5);
 
         for (var k = 0; k < Object.keys(COLUMNS).length; k++) {;
+
             _DATA[i][COLUMNS[k]] = temp[i]['gsx$' + COLUMNS[k]]['$t'];
-
-
 
         }
     }
@@ -67,4 +69,4 @@ async function separateRowFromJson(SOURCE, COLUMNS) {
 function info() {
     var element = document.getElementById("navbar");
     element.classList.toggle("navbarAfter");
-}
+};
