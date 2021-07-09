@@ -43,7 +43,6 @@ html {
         padding-top: 0.3em;
         padding-bottom: 0.3em;
     }
-    .nav,
     .name,
     .form,
     .description,
@@ -105,6 +104,8 @@ html {
     width: 24em;
     height: 22em;
     font-weight: 300;
+    background-color: #333;
+    color: aliceblue;
 }
 
 .navbarAfter .about {
